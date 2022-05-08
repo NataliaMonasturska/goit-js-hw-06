@@ -21,4 +21,4 @@ const gallery = images.map(({ url, alt }) =>
 </li>`
 ).join("");
 UlGallery.insertAdjacentHTML("afterbegin", gallery);
-console.log(UlGallery);
+
