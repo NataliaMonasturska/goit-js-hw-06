@@ -9,12 +9,12 @@ const ingredients = [
 
 
 
-const UlIngredients = document.querySelector("ul#ingredients");
+const ulIngredients = document.querySelector("ul#ingredients");
 
   const ingredientsList = ingredients.map((elem) => {
-    const MakeLi = document.createElement("li");
-    MakeLi.textContent = elem;
-    MakeLi.classList.add("item")
-    return MakeLi;
+    const makeLi = document.createElement("li");
+    makeLi.textContent = elem;
+    makeLi.classList.add("item")
+    return makeLi;
   }); 
-  UlIngredients.append(...ingredientsList);
+  ulIngredients.append(...ingredientsList);
