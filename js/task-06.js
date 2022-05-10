@@ -5,8 +5,12 @@ console.log(Input);
 const validation = (event) => {
     if (event.currentTarget.value.length < Number(DataInput.dataset.length)) {
       Input.classList.add("invalid") 
-    }
-    Input.classList.add("valid") 
+     
+  }
+    else {
+      Input.classList.add("valid") 
+  }
+    
 }
 const focusRemove = () => {
 Input.classList.remove("valid","invalid")
